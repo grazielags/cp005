@@ -1,0 +1,10 @@
+início
+	var
+		X, Y, Z: inteiro
+	X = 20
+	Y = 5
+	Z <- X + Y
+	escrever(X)
+	escrever(Y)
+	escrever(Z)
+fim;

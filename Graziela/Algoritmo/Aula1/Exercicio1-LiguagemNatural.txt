@@ -1,0 +1,16 @@
+Problema:
+	Escreva um algoritmo para armazenar o valor 20 em uma variável X e o valor 5 em uma variável Y. A seguir, armazenar a soma do valor de X com o de Y em uma variável Z. Escrever (na tela) o valor armazenado em X, em Y e em Z.;
+Entradas:
+	3 valores inteiros, X, Y e Z;
+Saídas:
+	Soma de X e Y: Z = X + Y;
+
+Algoritmo:
+	Início
+		X = 20
+		Y = 5
+		Calcular a soma de X e Y
+		Escrever X
+		Escrever Y
+		Escrever Z
+	Fim
