@@ -1,0 +1,16 @@
+Problema:
+	Criar um algoritmo que leia a idade de 5 pessoas e apresente a idade média delas.
+Entradas:
+	5 idades inteiras e a média delas, i1, i2, i3, i4 e i5;
+Saídas:
+	Média das idades: media = (i1 + i2 + i3 + i4 + i5) / 5
+Algoritmo:
+	Início
+		Ler idade 1
+		Ler idade 2
+		Ler idade 3
+		Ler idade 4
+		Ler idade 5
+		Calcular a média das idades
+		Escrever média das idades
+	Fim

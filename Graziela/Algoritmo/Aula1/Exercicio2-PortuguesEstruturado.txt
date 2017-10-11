@@ -1,0 +1,13 @@
+início
+	var
+		A, B, C, D: inteiro
+	A = 4
+	B = 3
+	C <- A + B
+	D <- A - B
+	escrever(A)
+	escrever(B)
+	escrever(C)
+	escrever(D)
+	escrever("Fim do Algoritmo")
+fim;

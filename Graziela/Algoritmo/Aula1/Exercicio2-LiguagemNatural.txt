@@ -1,0 +1,19 @@
+Problema:
+	Escreva um algoritmo para armazenar o valor 4 em uma variável A e o valor 3 em uma variável B. A seguir, armazenar a soma de A com B em uma variável C e a subtração de A com B em uma variável D. Escrever o valor de A, B, C e D e também escrever a mensagem 'Fim do Algoritmo'.
+Entradas:
+	4 valores inteiros, A, B, C e D;
+Saídas:
+	Soma de A e B: C = A + B;
+	Subtração de A e B: D = A - B;
+Algoritmo:
+	Início
+		A = 4
+		B = 3
+		Calcular a soma de A e B
+		Calcular a subtração de A e B
+		Escrever A
+		Escrever B
+		Escrever C
+		Escrever D
+		Escrever "Fim do Algoritmo"
+	Fim

@@ -1,0 +1,16 @@
+início
+	var
+		i1, i2, i3, i4, i5, media: inteiro
+	escrever("Leia a idade da pessoa 1")
+	leia(i1)
+	escrever("Leia a idade da pessoa 2")
+	leia(i2)
+	escrever("Leia a idade da pessoa 3")
+	leia(i3)
+	escrever("Leia a idade da pessoa 4")
+	leia(i4)
+	escrever("Leia a idade da pessoa 5")
+	leia(i5)
+	media <- (i1+i2+i3+i4+i5)/5
+	escrever(media)
+fim;
