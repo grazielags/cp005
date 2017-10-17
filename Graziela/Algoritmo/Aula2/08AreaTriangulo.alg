@@ -4,7 +4,7 @@ var
 inicio
    Escreval("Digite o valor da base: ")
    Leia(base)
-   Escreval("Digite o valor da altura: ")
+   Escreva("Digite o valor da altura: ")
    Leia(altura)
    area <- (base * altura) / 2
    Escreval("A área é: ", area)

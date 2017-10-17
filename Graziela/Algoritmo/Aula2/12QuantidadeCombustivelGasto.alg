@@ -1,20 +1,16 @@
-algoritmo "QuantidadeCombustivelGasto"
+algoritmo "GastosKm"
 var
-	kmPercorridos : real
-	consumoMedio : inteiro
-	tempoGasto : inteiro
-	velocidadeMedia : real
-	qtdLitros : real
+   kmPorLitro, tempo, velocidade, distancia, litrosGastos : real
 inicio
-   Escreval("Digite a velocidade média: ")
-   Leia(velocidadeMedia)
-   Escreval("Digite o tempo gasto: ")
-   Leia(tempoGasto)
-   consumoMedio <- 12
-   kmPercorridos <- tempoGasto * velocidadeMedia
-   qtdLitros <- kmPercorridos / consumoMedio
-   Escreval("Velocidade média: ", velocidadeMedia, " Km/h.")
-   Escreval("Tempo gasto na viagem: ", tempoGasto, " horas.")
-   Escreval("Distância percorrida: ", kmPercorridos, " Km.")
-   Escreval(qtdLitros, " litros gastos nesse percurso.")
+   kmPorLitro <- 12
+   Escreval("Digite o tempo da viagem (hora): ")
+   Leia(tempo)
+   Escreval("Digite a velocidade média (Km/h): ")
+   Leia(velocidade)
+   distancia <- tempo * velocidade
+   litrosGastos <-distancia / kmPorLitro
+   Escreval("Velocidade média: ", velocidade, " Km/h")
+   Escreval("Tempo gasto: ", tempo, "hora(s)")
+   Escreval("Distância: ", distancia, "Km")
+   Escreval("Quantidade de litros gasto: ", litrosGastos)
 fimalgoritmo
