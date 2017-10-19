@@ -3,6 +3,8 @@ var
    nota1, nota2, nota3, media : real
    nome : caractere
 inicio
+   Escreva("DIgite o seu nome: ")
+   Leia(nome)
    Escreva("Digite a nota 1: ")
    Leia(nota1)
    Escreva("Digite a nota 2: ")
