@@ -1,0 +1,14 @@
+﻿1. Faça um algoritmo que leia um vetor N[5].
+A seguir, encontre o menor elemento do vetor N e a sua posição dentro do vetor, mostrando: “O menor elemento de N é”, M, “e sua posição dentro do vetor é:”,P.
+
+2. Escreva um algoritmo que leia dois vetores de 5 posições e faça a multiplicação dos elementos de mesmo índice, colocando o resultado em um terceiro vetor.
+Mostre o vetor resultante.
+
+3. Faça um algoritmo que leia um vetor K[5]. Troque a seguir, todos os elementos de ordem ímpar do vetor com os elementos de ordem par imediatamente posteriores.
+
+4. Escreva um algoritmo que leia e mostre um vetor de 10 números. A seguir, conte quantos valores pares existem no vetor.
+
+5. Escreva um algoritmo que leia um vetor de 5 posições e mostre-o.
+Em seguida, troque o primeiro elemento com o último, o segundo com o penúltimo, o terceiro com o antepenúltimo, e assim sucessivamente. Mostre o novo vetor depois da troca.
+
+6. Escreva um algoritmo que leia 5 valores para um vetor de 5 posições. Mostre depois somente os positivos.
