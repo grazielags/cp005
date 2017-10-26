@@ -6,16 +6,16 @@ var
 inicio
    escreva("Digite o nome: ")
    leia(nome)
-   escreva("Digite a quantidade de horas trabalhadas: ")
+   escreva("Digite quantas horas o ", nome, " trabalhou: ")
    leia(horasTrabalhadas)
    escreval("Digite qual o seu nível dentre as opções abaixo: ")
    escreval("   1 - Junior")
    escreval("   2 - Pleno")
    escreval("   3 - Senior")
    leia(nivel)
-   
+
    enquanto (nivel < 1) ou (nivel > 3) faca
-      escreval("Digite qual o seu nível dentre as opções abaixo: ")
+      escreval("Você digitou um nível inválido, digite qual o seu nível dentre as opções abaixo: ")
       escreval("   1 - Junior")
       escreval("   2 - Pleno")
       escreval("   3 - Senior")
@@ -30,7 +30,7 @@ inicio
        caso 3
             salario <- horasTrabalhadas * 50
        outrocaso
-            escreval("Opção inválida.")
+            escreval("Nível inválido.")
    fimescolha
    escreval(nome, " o seu salário será de: ", salario)
 fimalgoritmo
