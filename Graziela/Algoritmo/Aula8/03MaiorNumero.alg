@@ -14,5 +14,6 @@ inicio
       leia(n1)
       Escreva("Digite o número 2: ")
       leia(n2)
-      Escreva("O maior número é: ", maiorNumero())
+      maior <- maiorNumero()
+      Escreva("O maior número é: ", maior)
 fimalgoritmo
