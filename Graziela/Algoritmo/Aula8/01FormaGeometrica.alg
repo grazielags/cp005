@@ -14,8 +14,12 @@ inicio
               retorne "Dados inválidos!"
       fimescolha
 fimfuncao
+procedimento obterLados()
 inicio
       Escreva("Digite a quantidade de lados: ")
       leia(lados)
+fimprocedimento
+inicio
+      obterLados()
       Escreva(formaGeometrica())
 fimalgoritmo
