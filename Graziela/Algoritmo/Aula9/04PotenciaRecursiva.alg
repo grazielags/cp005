@@ -12,7 +12,7 @@ funcao resultadoPotencia(aux, b, p : inteiro) : inteiro
                 retorne b * resultadoPotencia(aux + 1, b, p)
              fimse
          fimse
-         //Forma como monta no momento do cálculo por exemplo base = 2 e potência = 2, (2 * (2 * (2 * (2))))
+         //Forma como monta no momento do cálculo por exemplo base = 2 e potência = 4, (2 * (2 * (2 * (2))))
 fimfuncao
 inicio
       Escreva("Digite a base: ")
