@@ -1,0 +1,58 @@
+2017-11-14 18:57:39.653 [Worker-0] DEBUG AgentProvider - setInitializationData. isBetafalse; location jrebel/
+2017-11-14 18:57:39.749 [Worker-0] DEBUG AgentProvider - setInitializationData. isBetatrue; location jr6/jrebel/
+2017-11-14 18:57:40.049 [Worker-0] DEBUG HttpNotifications - Starting JRebel Notification server on port 0
+2017-11-14 18:57:42.258 [Worker-0] DEBUG HttpNotifications - Listening to JRebel notifications at http://127.0.0.1:51195/jrebel/notifications
+2017-11-14 18:57:42.332 [Worker-0] DEBUG EclipseJRebelClientAdapter - Getting license via CLI
+2017-11-14 18:57:42.410 [Worker-0] DEBUG o.z.exec.ProcessExecutor - Executing [C:\Program Files\Java\jre1.8.0_60\bin\java.exe, -Drebel.log=false, -Drebel.log.stdout=false, -Drebel.env.ide=Eclipse, -Drebel.properties=C:\Users\Grazi\.jrebel\jrebel.properties, -Drebel.license_server.legacy=false, -cp, D:\Eclipse\plugins\org.zeroturnaround.eclipse.embedder_5.5.4.RELEASE-201405291539\jrebel\jrebel.jar, com.zeroturnaround.javarebel.CLILicensingAPIImpl, getCurrentLicense, ]...
+2017-11-14 18:57:42.563 [Worker-0] DEBUG o.z.exec.ProcessExecutor - Started java.lang.ProcessImpl@180c9aea
+2017-11-14 18:57:42.695 [JRebel License Expiration Notification Checker] DEBUG EclipseJRebelClientAdapter - Getting license via CLI
+2017-11-14 18:57:42.709 [JRebel License Expiration Notification Checker] DEBUG o.z.exec.ProcessExecutor - Executing [C:\Program Files\Java\jre1.8.0_60\bin\java.exe, -Drebel.log=false, -Drebel.log.stdout=false, -Drebel.env.ide=Eclipse, -Drebel.properties=C:\Users\Grazi\.jrebel\jrebel.properties, -Drebel.license_server.legacy=false, -cp, D:\Eclipse\plugins\org.zeroturnaround.eclipse.embedder_5.5.4.RELEASE-201405291539\jrebel\jrebel.jar, com.zeroturnaround.javarebel.CLILicensingAPIImpl, getCurrentLicense, ]...
+2017-11-14 18:57:42.818 [JRebel License Expiration Notification Checker] DEBUG o.z.exec.ProcessExecutor - Started java.lang.ProcessImpl@1659f2be
+2017-11-14 18:57:45.100 [JRebel License Expiration Notification Checker] DEBUG o.z.exec.WaitForProcess - java.lang.ProcessImpl@1659f2be stopped with exit code 0
+2017-11-14 18:57:45.100 [Worker-0] DEBUG o.z.exec.WaitForProcess - java.lang.ProcessImpl@180c9aea stopped with exit code 0
+2017-11-14 18:57:45.116 [Worker-0] DEBUG EclipseJRebelClientAdapter - Getting license via CLI
+2017-11-14 18:57:45.116 [Thread-24] DEBUG o.z.exec.ProcessExecutor - Executing [C:\Program Files\Java\jre1.8.0_60\bin\java.exe, -Drebel.log=false, -Drebel.log.stdout=false, -Drebel.env.ide=Eclipse, -Drebel.properties=C:\Users\Grazi\.jrebel\jrebel.properties, -Drebel.license_server.legacy=false, -cp, D:\Eclipse\plugins\org.zeroturnaround.eclipse.embedder_5.5.4.RELEASE-201405291539\jrebel\jrebel.jar, com.zeroturnaround.javarebel.CLILicensingAPIImpl, getCurrentLicense, ]...
+2017-11-14 18:57:45.153 [Thread-24] DEBUG o.z.exec.ProcessExecutor - Started java.lang.ProcessImpl@464c3a11
+2017-11-14 18:57:47.945 [Thread-24] DEBUG o.z.exec.WaitForProcess - java.lang.ProcessImpl@464c3a11 stopped with exit code 0
+2017-11-14 18:59:44.879 [Worker-15] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for OlaMundo
+2017-11-14 18:59:44.880 [Worker-15] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/cp005/src/cp005/OlaMundo.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=cp005.OlaMundo
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=cp005
+2017-11-14 19:00:11.932 [Worker-15] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for OlaMundo
+2017-11-14 19:00:11.932 [Worker-15] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/cp005/src/cp005/OlaMundo.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=cp005.OlaMundo
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=cp005
+2017-11-14 19:01:04.650 [Worker-12] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for OlaMundo
+2017-11-14 19:01:04.650 [Worker-12] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/cp005/src/cp005/OlaMundo.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=cp005.OlaMundo
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=cp005
+2017-11-14 19:38:37.556 [Worker-24] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for OlaMundo
+2017-11-14 19:38:37.558 [Worker-24] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/cp005/src/cp005/OlaMundo.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=cp005.OlaMundo
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=cp005
+2017-11-14 19:47:48.344 [Worker-6] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for ExemploTecladoJOptionPane
+2017-11-14 19:47:48.344 [Worker-6] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/cp005/src/cp005/ExemploTecladoJOptionPane.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=cp005.ExemploTecladoJOptionPane
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=cp005
+2017-11-14 19:48:38.268 [Worker-24] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for ExemploTecladoJOptionPane
+2017-11-14 19:48:38.268 [Worker-24] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/cp005/src/cp005/ExemploTecladoJOptionPane.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=cp005.ExemploTecladoJOptionPane
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=cp005
+2017-11-14 19:49:09.865 [Worker-6] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for ExemploTecladoJOptionPane
+2017-11-14 19:49:09.866 [Worker-6] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/cp005/src/cp005/ExemploTecladoJOptionPane.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=cp005.ExemploTecladoJOptionPane
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=cp005
