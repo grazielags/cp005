@@ -1,0 +1,18 @@
+import javax.swing.JOptionPane;
+
+public class Exercicio2 {
+	public static void main(String[] args) {
+		byte numero = Byte.parseByte(JOptionPane.showInputDialog("Digite um número de 0 até 10."));
+		switch (numero) {
+			case 0:
+				JOptionPane.showMessageDialog(null, "Zero");
+				break;
+			case 1:
+				JOptionPane.showMessageDialog(null, "Um");
+				break;
+			default:
+				JOptionPane.showMessageDialog(null, "Número inválido!");
+				break;
+		}
+	}
+}

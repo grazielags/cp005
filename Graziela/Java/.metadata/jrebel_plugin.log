@@ -200,3 +200,127 @@ entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula2/src/Exercicio1.java]
 entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
 entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio1
 entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula2
+2017-11-16 20:43:39.441 [Worker-2] DEBUG AgentProvider - setInitializationData. isBetafalse; location jrebel/
+2017-11-16 20:43:39.535 [Worker-2] DEBUG AgentProvider - setInitializationData. isBetatrue; location jr6/jrebel/
+2017-11-16 20:43:39.734 [Worker-2] DEBUG HttpNotifications - Starting JRebel Notification server on port 0
+2017-11-16 20:43:40.891 [Worker-2] DEBUG HttpNotifications - Listening to JRebel notifications at http://127.0.0.1:50041/jrebel/notifications
+2017-11-16 20:43:40.942 [Worker-2] DEBUG EclipseJRebelClientAdapter - Getting license via CLI
+2017-11-16 20:43:41.015 [Worker-2] DEBUG o.z.exec.ProcessExecutor - Executing [C:\Program Files\Java\jre1.8.0_60\bin\java.exe, -Drebel.log=false, -Drebel.log.stdout=false, -Drebel.env.ide=Eclipse, -Drebel.properties=C:\Users\Grazi\.jrebel\jrebel.properties, -Drebel.license_server.legacy=false, -cp, D:\Eclipse\plugins\org.zeroturnaround.eclipse.embedder_5.5.4.RELEASE-201405291539\jrebel\jrebel.jar, com.zeroturnaround.javarebel.CLILicensingAPIImpl, getCurrentLicense, ]...
+2017-11-16 20:43:41.083 [Worker-2] DEBUG o.z.exec.ProcessExecutor - Started java.lang.ProcessImpl@446506c5
+2017-11-16 20:43:41.336 [JRebel License Expiration Notification Checker] DEBUG EclipseJRebelClientAdapter - Getting license via CLI
+2017-11-16 20:43:41.339 [JRebel License Expiration Notification Checker] DEBUG o.z.exec.ProcessExecutor - Executing [C:\Program Files\Java\jre1.8.0_60\bin\java.exe, -Drebel.log=false, -Drebel.log.stdout=false, -Drebel.env.ide=Eclipse, -Drebel.properties=C:\Users\Grazi\.jrebel\jrebel.properties, -Drebel.license_server.legacy=false, -cp, D:\Eclipse\plugins\org.zeroturnaround.eclipse.embedder_5.5.4.RELEASE-201405291539\jrebel\jrebel.jar, com.zeroturnaround.javarebel.CLILicensingAPIImpl, getCurrentLicense, ]...
+2017-11-16 20:43:41.384 [JRebel License Expiration Notification Checker] DEBUG o.z.exec.ProcessExecutor - Started java.lang.ProcessImpl@4e71bfcd
+2017-11-16 20:43:42.046 [Worker-2] DEBUG o.z.exec.WaitForProcess - java.lang.ProcessImpl@446506c5 stopped with exit code 0
+2017-11-16 20:43:42.053 [Worker-2] DEBUG EclipseJRebelClientAdapter - Getting license via CLI
+2017-11-16 20:43:42.055 [Thread-25] DEBUG o.z.exec.ProcessExecutor - Executing [C:\Program Files\Java\jre1.8.0_60\bin\java.exe, -Drebel.log=false, -Drebel.log.stdout=false, -Drebel.env.ide=Eclipse, -Drebel.properties=C:\Users\Grazi\.jrebel\jrebel.properties, -Drebel.license_server.legacy=false, -cp, D:\Eclipse\plugins\org.zeroturnaround.eclipse.embedder_5.5.4.RELEASE-201405291539\jrebel\jrebel.jar, com.zeroturnaround.javarebel.CLILicensingAPIImpl, getCurrentLicense, ]...
+2017-11-16 20:43:42.082 [Thread-25] DEBUG o.z.exec.ProcessExecutor - Started java.lang.ProcessImpl@7d84a9d2
+2017-11-16 20:43:42.161 [JRebel License Expiration Notification Checker] DEBUG o.z.exec.WaitForProcess - java.lang.ProcessImpl@4e71bfcd stopped with exit code 0
+2017-11-16 20:43:42.471 [Thread-25] DEBUG o.z.exec.WaitForProcess - java.lang.ProcessImpl@7d84a9d2 stopped with exit code 0
+2017-11-16 19:17:35.960 [Worker-13] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio6
+2017-11-16 19:17:35.961 [Worker-13] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula1/src/Exercicio6.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio6
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula1
+2017-11-16 19:18:35.404 [Worker-3] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio6
+2017-11-16 19:18:35.405 [Worker-3] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula1/src/Exercicio6.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio6
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula1
+2017-11-16 19:18:49.905 [Worker-0] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio6
+2017-11-16 19:18:49.905 [Worker-0] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula1/src/Exercicio6.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio6
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula1
+2017-11-16 19:19:30.399 [Worker-11] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio6
+2017-11-16 19:19:30.399 [Worker-11] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula1/src/Exercicio6.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio6
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula1
+2017-11-16 19:27:59.502 [Worker-19] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio6
+2017-11-16 19:27:59.502 [Worker-19] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula1/src/Exercicio6.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio6
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula1
+2017-11-16 19:28:15.286 [Worker-23] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio2 (1)
+2017-11-16 19:28:15.286 [Worker-23] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula2/src/Exercicio2.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio2
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula2
+2017-11-16 19:28:24.176 [Worker-22] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio2 (1)
+2017-11-16 19:28:24.176 [Worker-22] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula2/src/Exercicio2.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio2
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula2
+2017-11-16 20:11:17.805 [Worker-23] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio3 (1)
+2017-11-16 20:11:17.806 [Worker-23] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula2/src/Exercicio3.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio3
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula2
+2017-11-16 20:11:25.769 [Worker-23] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio3 (1)
+2017-11-16 20:11:25.771 [Worker-23] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula2/src/Exercicio3.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio3
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula2
+2017-11-16 20:12:35.213 [Worker-33] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio3 (1)
+2017-11-16 20:12:35.213 [Worker-33] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula2/src/Exercicio3.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio3
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula2
+2017-11-16 20:12:43.877 [Worker-29] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio3 (1)
+2017-11-16 20:12:43.877 [Worker-29] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula2/src/Exercicio3.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio3
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula2
+2017-11-16 20:13:41.423 [Worker-26] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio3 (1)
+2017-11-16 20:13:41.423 [Worker-26] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula2/src/Exercicio3.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio3
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula2
+2017-11-16 20:13:53.888 [Worker-32] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio3 (1)
+2017-11-16 20:13:53.888 [Worker-32] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula2/src/Exercicio3.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio3
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula2
+2017-11-16 21:03:00.347 [Worker-39] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio1 (2)
+2017-11-16 21:03:00.347 [Worker-39] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula3/src/Exercicio1.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio1
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula3
+2017-11-16 21:03:54.757 [Worker-40] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio1 (2)
+2017-11-16 21:03:54.757 [Worker-40] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula3/src/Exercicio1.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio1
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula3
+2017-11-16 21:04:06.038 [Worker-37] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio1 (2)
+2017-11-16 21:04:06.038 [Worker-37] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula3/src/Exercicio1.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio1
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula3
+2017-11-16 21:04:20.785 [Worker-42] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio1 (2)
+2017-11-16 21:04:20.785 [Worker-42] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula3/src/Exercicio1.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio1
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula3
+2017-11-16 21:04:59.844 [Worker-42] DEBUG RebelArgsFixingLaunchListener - ILaunchConfiguration parameters for Exercicio1 (2)
+2017-11-16 21:04:59.844 [Worker-42] DEBUG RebelArgsFixingLaunchListener - 
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_PATHS=[/Aula3/src/Exercicio1.java]
+entry: org.eclipse.debug.core.MAPPED_RESOURCE_TYPES=[1]
+entry: org.eclipse.jdt.launching.MAIN_TYPE=Exercicio1
+entry: org.eclipse.jdt.launching.PROJECT_ATTR=Aula3
