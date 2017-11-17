@@ -1,0 +1,22 @@
+import javax.swing.JOptionPane;
+
+public class Exercicio5 {
+	public static void main(String[] args) {
+		byte mes = Byte.parseByte(JOptionPane.showInputDialog("Digite o mês."));
+		byte ano = Byte.parseByte(JOptionPane.showInputDialog("Digite o ano."));
+		switch (mes) {
+			case 1:
+				JOptionPane.showMessageDialog(null, "Janeiro: 31 dias!");
+				break;
+			case 2:
+				if(ano%4 == 0 && ano%100 != 0 || ano%400 == 0) {
+					JOptionPane.showMessageDialog(null, "Fevereiro: 29 dias!");
+				} else {
+					JOptionPane.showMessageDialog(null, "Fevereiro: 28 dias!");
+				}
+				break;
+			default:
+				break;
+		}
+	}
+}

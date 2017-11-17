@@ -8,7 +8,7 @@ public class Exercicio5 {
 				JOptionPane.showMessageDialog(null, "Janeiro: 31 dias!");
 				break;
 			case 2:
-				short ano = Short.parseShort(JOptionPane.showInputDialog("Digite o ano."));
+				byte ano = Byte.parseByte(JOptionPane.showInputDialog("Digite o ano."));
 				if(ano%4 == 0 && ano%100 != 0 || ano%400 == 0) {
 					JOptionPane.showMessageDialog(null, "Fevereiro: 29 dias!");
 				} else {
