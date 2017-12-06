@@ -49,7 +49,10 @@ var
 inicio
 repita
    repita
-      escreva("Digite a operacao: ")
+      se (operacao <> "") e (operacao <> "+") e (operacao <> "-") e (operacao <> "*") e (operacao <> "/") entao
+         escreval("Opção inválida!")
+      fimse
+      escreva("Digite a operacao (+, -, *, /): ")
       leia(operacao)
    ate (operacao = "+") ou (operacao = "-") ou (operacao = "*") ou (operacao = "/")
    escolha operacao
@@ -61,10 +64,8 @@ repita
          multiplicacao()
       caso "/"
          divisao()
-      outrocaso
-         escreva("opção invalida.")
    fimescolha
-escreva("deseja parar: ")
+escreva("deseja parar(sim ou não)? ")
 leia(parar)
 ate parar = "sim"
 fimalgoritmo
