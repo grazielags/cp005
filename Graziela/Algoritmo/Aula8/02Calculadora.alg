@@ -18,13 +18,17 @@ procedimento divisao()
    inicio
       Escreval(n1, " / ", n2, " = ", (n1 / n2))
 fimprocedimento
-inicio
+procedimento obterDados()
+   inicio
       Escreva("Digite o número 1: ")
       leia(n1)
       Escreva("Digite a operação (+, -, *, /): ")
       leia(operacao)
       Escreva("Digite o número 2: ")
       leia(n2)
+fimprocedimento
+procedimento verificaOperacao()
+   inicio
       escolha operacao
          caso "+"
               soma()
@@ -35,6 +39,11 @@ inicio
          caso "/"
               divisao()
          outrocaso
-              "Operação inválida!"
+              escreval("Operação inválida!")
       fimescolha
+fimprocedimento
+inicio
+   verificaOperacao()
+   obterDados()
+   verificaOperacao()
 fimalgoritmo

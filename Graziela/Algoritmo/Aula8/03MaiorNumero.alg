@@ -9,11 +9,15 @@ funcao maiorNumero() : inteiro
          retorne n2
       fimse
 fimfuncao
-inicio
+procedimento obterDados()
+   inicio
       Escreva("Digite o número 1: ")
       leia(n1)
       Escreva("Digite o número 2: ")
       leia(n2)
+fimprocedimento
+inicio
+      obterDados()
       maior <- maiorNumero()
       Escreva("O maior número é: ", maior)
 fimalgoritmo

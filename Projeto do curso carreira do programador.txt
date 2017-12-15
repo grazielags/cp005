@@ -1,0 +1,57 @@
+﻿Criar um controle bibliotecário.
+Terá usuários, livros e empréstimos dos livros.
+
+Menus:
+	Cadastro de Usuário:
+		1 - Cadastrar
+		2 - Consultar
+		3 - Logar
+
+	Somente com login efetuado, ou seja, estar logado:
+		1 - Livros
+		2 - Empréstimos
+		3 - Usuários (Essa opção do menu só estará disponível caso o usuário possua perfil Admin)
+
+		Menu Livros:
+			1 - Consultar (Qualquer perfil)
+			2 - Cadastrar (Essa opção do menu só estará disponível caso o usuário possua perfil Admin)
+			3 - Remover (Essa opção do menu só estará disponível caso o usuário possua perfil Admin)
+
+		Menu Empréstimos:
+			1 - Realizar empréstimo de livro
+			2 - Devolver livro
+
+		Menu Usuário
+			1 - Remover (Essa opção do menu só estará disponível caso o usuário possua perfil Admin)
+			
+Dados de cadasto do Usuário:
+	Id
+	Nome
+	Endereço
+	Perfil (1 - Admin, 2 - Usuário normal)
+	Login
+	Senha
+
+Dados que devem ser apresentados quando consultar Usuários:
+	Id
+	Nome
+	Endereço
+	Perfil
+	Login
+	
+Dados do cadastro de Livros:
+	Id
+	Nome do Livro
+	Autor
+	Ano da edição
+
+Dados que devem ser apresentados quando consultar Livros:
+	Id
+	Nome do Livro
+	Autor
+	Ano da edição
+	Situação (Se está disponível ou emprestado)
+
+Dados do Empréstimo:
+	Id do Livro
+	Id do Usuário
