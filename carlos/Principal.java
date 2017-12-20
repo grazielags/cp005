@@ -84,7 +84,11 @@ public class Principal {
 					break;
 				case 3:
 					cadastrarUsuario();
+<<<<<<< HEAD
 					break;
+=======
+				        break;
+>>>>>>> fe97dd29ec395b8d1fa99de71165ebd40a0825cd
 				case 4:
 					removerUsuarios();
 					break;
