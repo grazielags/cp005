@@ -29,20 +29,20 @@ public class Principal {
 		} while (menu == 3);
 	}
 
-	private static void consultarUsuario() throws SQLException {
+		private static void consultarUsuario() throws SQLException {
 		String nomeUsuario = JOptionPane.showInputDialog("Nome do usuário:");
 		Connection conexao = ConnectionFactory.obterConexao();
-		StringBuilder sql = new StringBuilder();
-		sql.append("select n.*, ");
-		sql.append("from usuario u ");
-		sql.append("where u.nome like ?");
-		PreparedStatement ps = conexao.prepareStatement(sql.toString());
-		ps.setString(1, "%" + nomeUsuario + "%");
+		String sql = "select * from usuario where nome like ?";
+		PreparedStatement ps = conexao.prepareStatement(sql);
+		ps.setString(1, "%"+ nomeUsuario +"%");
+		
 		ResultSet lista = ps.executeQuery();
 		String saida = "";
 		while (lista.next()) {
 			saida += "Id: " + lista.getString("id");
 			saida += "\nNome: " + lista.getString("nome");
+			saida += "\nPerfil: " + lista.getString("perfil");
+			saida += "\nLogin: " + lista.getString("login");
 			saida += "\n\n";
 		}
 		JOptionPane.showMessageDialog(null, saida);
