@@ -103,6 +103,7 @@ public class Principal {
 					break;
 				case 3:
 					cadastrarUsuario();
+				        break;
 				case 4:
 					removerUsuarios();
 					break;
