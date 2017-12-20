@@ -1,4 +1,3 @@
-import java.nio.channels.ShutdownChannelGroupException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -15,7 +14,7 @@ public class Principal {
 		do {
 			switch (menu) {
 			case 1:
-				consultarUsuario();
+				consultarUsuario(); //not done
 				break;
 			case 2:
 				logar();
@@ -26,28 +25,10 @@ public class Principal {
 				JOptionPane.showMessageDialog(null, "Opção Invávila!");
 				break;
 			}
-			
+
 		} while (menu == 3);
 	}
-	
-	private static void cadastrarUsuario() throws SQLException {
-		Connection conexao = ConnectionFactory.obterConexao();
-		String sql = "insert into usuario"
-				+ "(nome, endereco, perfil, login, senha)"
-				+ "values(?, ?, ?, ?, ?)";
-		PreparedStatement ps = conexao.prepareStatement(sql);
-		ps.setString(1, JOptionPane.showInputDialog("Digite o nome do usuario:"));
-		ps.setString(2, JOptionPane.showInputDialog("Digite o endereço do usuario:"));
-		ps.setString(3, JOptionPane.showInputDialog("Digite o perfil do usuario (1- admin, 2- usuario):"));
-		ps.setString(4, JOptionPane.showInputDialog("Digite o login do usuario:"));
-		ps.setString(5, JOptionPane.showInputDialog("Digite a senha do usuario:"));
-		
-		ps.execute();
-		JOptionPane.showMessageDialog(null, "Usuário cadastrado com sucesso!");
-		ps.close();
-		conexao.close();
-	}
-	
+
 	private static void consultarUsuario() throws SQLException {
 		String nomeUsuario = JOptionPane.showInputDialog("Nome do usuário:");
 		Connection conexao = ConnectionFactory.obterConexao();
@@ -99,10 +80,11 @@ public class Principal {
 					livros();
 					break;
 				case 2:
-					emprestimos();
+					emprestimos(); //not done
 					break;
 				case 3:
 					cadastrarUsuario();
+					break;
 				case 4:
 					removerUsuarios();
 					break;
@@ -134,26 +116,6 @@ public class Principal {
 			}
 
 		}
-	}
-
-private static void removerUsuarios() throws SQLException {
-	int idUsuarioRomover = Integer.parseInt(JOptionPane.showInputDialog("Digite o id"));
-	Connection conexao = ConnectionFactory.obterConexao();
-	String sql = "delete from usuario where id = ?";
-	PreparedStatement ps = conexao.prepareStatement(sql);
-	ps.setInt(1, idUsuarioRomover);
-
-		if (ps.executeUpdate() > 0) {
-			JOptionPane.showMessageDialog(null, "Removido com sucesso!");
-		} else {
-			JOptionPane.showMessageDialog(null, "Erro no processo de exclusão!");
-		}
-		ps.close();
-		conexao.close();
-	}
-
-	private static void emprestimos() {
-		
 	}
 
 	private static void livros() throws SQLException {
@@ -193,7 +155,7 @@ private static void removerUsuarios() throws SQLException {
 			}
 		}
 	}
-
+    
 	private static void codastrarLivros() throws SQLException {
 		Connection conexao = ConnectionFactory.obterConexao();
 		String sql = "insert into livro"
@@ -203,31 +165,14 @@ private static void removerUsuarios() throws SQLException {
 		ps.setString(1, JOptionPane.showInputDialog("Digite o nome do livro:"));
 		ps.setString(2, JOptionPane.showInputDialog("Digite o nome do autor do livro:"));
 		ps.setString(3, JOptionPane.showInputDialog("Digite o ano de edição do livro:"));
-		
+
 		ps.execute();
 		JOptionPane.showMessageDialog(null, "Livro cadastrado com sucesso!");
 		ps.close();
 		conexao.close();
-		
-	}
 
-	private static void romoverLivros() throws SQLException {
-		int idLivroRomover = Integer.parseInt(JOptionPane.showInputDialog("Digite o id"));
-		Connection conexao = ConnectionFactory.obterConexao();
-		String sql = "delete from livro where id = ?";
-		PreparedStatement ps = conexao.prepareStatement(sql);
-		ps.setInt(1, idLivroRomover);
-		
-		if (ps.executeUpdate() > 0) {
-			JOptionPane.showMessageDialog(null, "Removido com sucesso!");
-		} else {
-			JOptionPane.showMessageDialog(null, "Erro no processo de exclusão!");
-		}
-		ps.close();
-		conexao.close();
-		
 	}
-
+	
 	private static void consultarLivros() throws SQLException {
 		String nomeLivro = JOptionPane.showInputDialog("Nome do Livro.");
 		Connection conexao = ConnectionFactory.obterConexao();
@@ -252,5 +197,60 @@ private static void removerUsuarios() throws SQLException {
 			saida += "\n\n";
 		}
 		JOptionPane.showMessageDialog(null, saida);
+	}
+    
+	private static void romoverLivros() throws SQLException {
+		int idLivroRomover = Integer.parseInt(JOptionPane.showInputDialog("Digite o id"));
+		Connection conexao = ConnectionFactory.obterConexao();
+		String sql = "delete from livro where id = ?";
+		PreparedStatement ps = conexao.prepareStatement(sql);
+		ps.setInt(1, idLivroRomover);
+		
+		if (ps.executeUpdate() > 0) {
+			JOptionPane.showMessageDialog(null, "Removido com sucesso!");
+		} else {
+			JOptionPane.showMessageDialog(null, "Erro no processo de exclusão!");
+		}
+		ps.close();
+		conexao.close();
+		
+	}
+	
+	private static void emprestimos() {
+
+	}
+
+	private static void cadastrarUsuario() throws SQLException {
+		Connection conexao = ConnectionFactory.obterConexao();
+		String sql = "insert into usuario"
+				+ "(nome, endereco, perfil, login, senha)"
+				+ "values(?, ?, ?, ?, ?)";
+		PreparedStatement ps = conexao.prepareStatement(sql);
+		ps.setString(1, JOptionPane.showInputDialog("Digite o nome do usuario:"));
+		ps.setString(2, JOptionPane.showInputDialog("Digite o endereço do usuario:"));
+		ps.setString(3, JOptionPane.showInputDialog("Digite o perfil do usuario (1- admin, 2- usuario):"));
+		ps.setString(4, JOptionPane.showInputDialog("Digite o login do usuario:"));
+		ps.setString(5, JOptionPane.showInputDialog("Digite a senha do usuario:"));
+
+		ps.execute();
+		JOptionPane.showMessageDialog(null, "Usuário cadastrado com sucesso!");
+		ps.close();
+		conexao.close();
+	}
+
+	private static void removerUsuarios() throws SQLException {
+		int idUsuarioRomover = Integer.parseInt(JOptionPane.showInputDialog("Digite o id"));
+		Connection conexao = ConnectionFactory.obterConexao();
+		String sql = "delete from usuario where id = ?";
+		PreparedStatement ps = conexao.prepareStatement(sql);
+		ps.setInt(1, idUsuarioRomover);
+
+		if (ps.executeUpdate() > 0) {
+			JOptionPane.showMessageDialog(null, "Removido com sucesso!");
+		} else {
+			JOptionPane.showMessageDialog(null, "Erro no processo de exclusão!");
+		}
+		ps.close();
+		conexao.close();
 	}
 }
