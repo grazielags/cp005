@@ -9,29 +9,25 @@ public class Principal {
 	private static int idUsuarioLogado;
 	private static boolean isAdmin;
 	public static void main(String[] args) throws SQLException {
-		int menu = Integer.parseInt(JOptionPane.showInputDialog("1- Cadastrar usuário"
-				+ "\n2- Consultar usuário"
-				+ "\n3- Logar"
-				+ "\n4- Sair"));
+		int menu = Integer.parseInt(JOptionPane.showInputDialog("1- Consultar Usuário"
+				+ "\n2- Logar"
+				+ "\n3- Sair"));
 		do {
 			switch (menu) {
 			case 1:
-				cadastrarUsuario();
-				break;
-			case 2:
 				consultarUsuario();
 				break;
-			case 3:
+			case 2:
 				logar();
 				break;
-			case 4:
+			case 3:				
 				break;
 			default:
-				JOptionPane.showMessageDialog(null, "Opção invávila!");
+				JOptionPane.showMessageDialog(null, "Opção Invávila!");
 				break;
 			}
 			
-		} while (menu == 4);
+		} while (menu == 3);
 	}
 	
 	private static void cadastrarUsuario() throws SQLException {
@@ -85,42 +81,68 @@ public class Principal {
 		ResultSet resultado = ps.executeQuery();
 		boolean isLogado = false;
 		while (resultado.next()) {
-			System.out.println("Logado com sucesso!");
+			JOptionPane.showMessageDialog(null, "Logado com sucesso!");
 			idUsuarioLogado = resultado.getInt("id");
 			isAdmin = resultado.getInt("perfil") == 1;
 			isLogado = true;
 		}
 		if (isLogado) {
-			String menu = "1- Livros";
-			menu += "\n2- Empréstimos";
 			if (isAdmin) {
-				menu += "\n3- Remover usuários";
+				String menu = "1- Livros"
+						+ "\n2- Empréstimos"
+						+ "\n3- Cadastrar Usuários"
+						+ "\n4- Remover Usuários"
+						+ "\n5- Sair";
+				int opcaoMenuLogado = Integer.parseInt(JOptionPane.showInputDialog(null, menu));
+				switch (opcaoMenuLogado) {
+				case 1:
+					livros();
+					break;
+				case 2:
+					emprestimos();
+					break;
+				case 3:
+					cadastrarUsuario();
+				case 4:
+					removerUsuarios();
+					break;
+				case 5:
+					break;
+				default:
+					JOptionPane.showMessageDialog(null, "Opção do menu Inválida");
+					break;
+				}
+			} else {
+				String menu = "1- Livros"
+						+ "\n2- Empréstimos"
+						+ "\n3- Sair";
+				int opcaoMenuLogado = Integer.parseInt(JOptionPane.showInputDialog(null, menu));
+				switch (opcaoMenuLogado) {
+				case 1:
+					livros();
+					break;
+				case 2:
+					emprestimos();
+					break;
+				case 3:
+					break;
+				default:
+					JOptionPane.showMessageDialog(null, "Opção do menu Inválida");
+					break;
+				}
+
 			}
-			int opcaoMenuLogado = Integer.parseInt(JOptionPane.showInputDialog(null, menu));
-			switch (opcaoMenuLogado) {
-			case 1:
-				livros();
-				break;
-			case 2:
-				emprestimos();
-				break;
-			case 3:
-				removerUsuarios();
-				break;
-			default:
-				JOptionPane.showMessageDialog(null, "Opção do menu inválida");
-				break;
-			}
+
 		}
 	}
-	
-	private static void removerUsuarios() throws SQLException {
-		int idUsuarioRomover = Integer.parseInt(JOptionPane.showInputDialog("Digite o id"));
-		Connection conexao = ConnectionFactory.obterConexao();
-		String sql = "delete from usuario where id = ?";
-		PreparedStatement ps = conexao.prepareStatement(sql);
-		ps.setInt(1, idUsuarioRomover);
-		
+
+private static void removerUsuarios() throws SQLException {
+	int idUsuarioRomover = Integer.parseInt(JOptionPane.showInputDialog("Digite o id"));
+	Connection conexao = ConnectionFactory.obterConexao();
+	String sql = "delete from usuario where id = ?";
+	PreparedStatement ps = conexao.prepareStatement(sql);
+	ps.setInt(1, idUsuarioRomover);
+
 		if (ps.executeUpdate() > 0) {
 			JOptionPane.showMessageDialog(null, "Removido com sucesso!");
 		} else {
