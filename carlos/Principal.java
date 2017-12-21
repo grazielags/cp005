@@ -29,13 +29,13 @@ public class Principal {
 		} while (menu == 3);
 	}
 
-		private static void consultarUsuario() throws SQLException {
+	private static void consultarUsuario() throws SQLException {
 		String nomeUsuario = JOptionPane.showInputDialog("Nome do usuário:");
 		Connection conexao = ConnectionFactory.obterConexao();
 		String sql = "select * from usuario where nome like ?";
 		PreparedStatement ps = conexao.prepareStatement(sql);
 		ps.setString(1, "%"+ nomeUsuario +"%");
-		
+
 		ResultSet lista = ps.executeQuery();
 		String saida = "";
 		while (lista.next()) {
@@ -155,7 +155,7 @@ public class Principal {
 			}
 		}
 	}
-    
+
 	private static void codastrarLivros() throws SQLException {
 		Connection conexao = ConnectionFactory.obterConexao();
 		String sql = "insert into livro"
@@ -172,7 +172,7 @@ public class Principal {
 		conexao.close();
 
 	}
-	
+
 	private static void consultarLivros() throws SQLException {
 		String nomeLivro = JOptionPane.showInputDialog("Nome do Livro.");
 		Connection conexao = ConnectionFactory.obterConexao();
@@ -185,7 +185,7 @@ public class Principal {
 		sql.append("where l.nome like ?");
 		PreparedStatement ps = conexao.prepareStatement(sql.toString());
 		ps.setString(1, "%"+ nomeLivro +"%");
-		
+
 		ResultSet lista = ps.executeQuery();
 		String saida = "";
 		while (lista.next()) {
@@ -198,14 +198,14 @@ public class Principal {
 		}
 		JOptionPane.showMessageDialog(null, saida);
 	}
-    
+
 	private static void romoverLivros() throws SQLException {
 		int idLivroRomover = Integer.parseInt(JOptionPane.showInputDialog("Digite o id"));
 		Connection conexao = ConnectionFactory.obterConexao();
-		String sql = "delete from livro where id = ?";
+		String sql = "delete from livro where id like ?";
 		PreparedStatement ps = conexao.prepareStatement(sql);
 		ps.setInt(1, idLivroRomover);
-		
+
 		if (ps.executeUpdate() > 0) {
 			JOptionPane.showMessageDialog(null, "Removido com sucesso!");
 		} else {
@@ -213,11 +213,22 @@ public class Principal {
 		}
 		ps.close();
 		conexao.close();
-		
-	}
-	
-	private static void emprestimos() {
 
+	}
+
+	private static void emprestimos() throws SQLException {
+		Connection conexao = ConnectionFactory.obterConexao();
+		String sql = "insert into emprestimo"
+				+ "(id_usuario, id_livro)"
+				+ "values(?, ?)";
+		PreparedStatement ps = conexao.prepareStatement(sql);
+		ps.setString(1, String.valueOf(idUsuarioLogado));
+		ps.setString(2, JOptionPane.showInputDialog("Digite o id do livro:"));
+
+		ps.execute();
+		JOptionPane.showMessageDialog(null, "Empréstimo realizado com sucesso!");
+		ps.close();
+		conexao.close();
 	}
 
 	private static void cadastrarUsuario() throws SQLException {
@@ -226,11 +237,11 @@ public class Principal {
 				+ "(nome, endereco, perfil, login, senha)"
 				+ "values(?, ?, ?, ?, ?)";
 		PreparedStatement ps = conexao.prepareStatement(sql);
-		ps.setString(1, JOptionPane.showInputDialog("Digite o nome do usuario:"));
-		ps.setString(2, JOptionPane.showInputDialog("Digite o endereço do usuario:"));
-		ps.setString(3, JOptionPane.showInputDialog("Digite o perfil do usuario (1- admin, 2- usuario):"));
-		ps.setString(4, JOptionPane.showInputDialog("Digite o login do usuario:"));
-		ps.setString(5, JOptionPane.showInputDialog("Digite a senha do usuario:"));
+		ps.setString(1, JOptionPane.showInputDialog("Digite o nome do usuário:"));
+		ps.setString(2, JOptionPane.showInputDialog("Digite o endereço do usuário:"));
+		ps.setString(3, JOptionPane.showInputDialog("Digite o perfil do usuario (1- admin, 2- usuário):"));
+		ps.setString(4, JOptionPane.showInputDialog("Digite o login do usuário:"));
+		ps.setString(5, JOptionPane.showInputDialog("Digite a senha do usuário:"));
 
 		ps.execute();
 		JOptionPane.showMessageDialog(null, "Usuário cadastrado com sucesso!");
@@ -241,7 +252,7 @@ public class Principal {
 	private static void removerUsuarios() throws SQLException {
 		int idUsuarioRomover = Integer.parseInt(JOptionPane.showInputDialog("Digite o id"));
 		Connection conexao = ConnectionFactory.obterConexao();
-		String sql = "delete from usuario where id = ?";
+		String sql = "delete from usuario where id like ?";
 		PreparedStatement ps = conexao.prepareStatement(sql);
 		ps.setInt(1, idUsuarioRomover);
 
