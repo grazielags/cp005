@@ -14,7 +14,7 @@ public class Principal {
 		do {
 			switch (menu) {
 			case 1:
-				consultarUsuario(); //not done
+				consultarUsuario();
 				break;
 			case 2:
 				logar();
@@ -80,7 +80,7 @@ public class Principal {
 					livros();
 					break;
 				case 2:
-					emprestimos(); //not done
+					emprestimos();
 					break;
 				case 3:
 					cadastrarUsuario();
